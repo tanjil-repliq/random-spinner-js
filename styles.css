@@ -5,10 +5,22 @@ body {
     justify-content: center;
     height: 100vh;
     font-family: Arial, sans-serif;
+    background-color:  rgb(241 245 249);
+    padding: 0;
+    margin: 0;
 }
 
 #wheel {
     margin-bottom: 20px;
+}
+
+#label{
+    color: rgb(20, 100, 95);
+    line-height: 0; 
+    padding:0px 8px ; 
+}
+#separetor{
+    border-bottom: 1px solid rgb(20, 100, 95);
 }
 
 #spinButton, #addNameButton {
@@ -26,14 +38,20 @@ body {
  #addNameButton:hover{
     background-color: rgb(20, 100, 95);
 }
+
 #spinButton:hover{
     background-color: rgb(20, 100, 95);
+}
+
+#input-container{
+    margin-top: 28px;
 }
 #nameInput{
     border-color: rgb(15 118 110);;
     border: 2px solid rgb(15 118 110);;
     border-radius: 4px;
     padding: 8px 16px;
+    background-color: white;
 }
 
 #nameInput:focus{
@@ -41,8 +59,37 @@ body {
     border-color:  rgb(20, 100, 95);
     border: 2px solid rgb(20, 100, 95);
 }
+#participants-container{
+    margin: 16px;
+    border: 2px solid rgb(15 118 110);
+    border-radius: 4px;
+    background-color: white;
+}
 
 #nameList {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 291px;
     list-style-type: none;
-    padding: 0;
+    padding:0px 8px ;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#results-container{
+    margin-top: 28px;
+    width: 291px;
+    padding: 8px ;
+    background-color: white;
+    border: 2px solid rgb(20, 100, 95);
+    color: gray;
+    border-radius: 4px;
+    display: none;
+}
+
+#results{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
 }
